@@ -1,9 +1,9 @@
 # GitCheatSheet
 
-This is the summary of the Git usage, but first, what is git?
+This is the summary of the Git usage, but first, what is Git?
 Git is the version control for programs, and also for the sake of controlling the versions ans so on.
 Below Git we can find centres for the version control, such as GitHub (which is the page where your are reading this Markdown), GitLab, etc.
-In this centres you can find other Gits, called repositories, in those repositories is where you can control de version of programs you are coding.
+In this centres you can find other Gits, called repositories, in those repositories is where you can control the versions of programs you are coding.
 
 Now let's talk about some commands for this summary:
 
@@ -37,4 +37,22 @@ Now, you have git installed! Let's configure it.
 
 # Configuring Git
 
-To configure Git, you will need to specify the location where you will going to upload your submissions, we can use
+To configure Git, you will need to specify the location where you will going to upload your submissions, we use the command:
+
+```
+git config --global user.name <yourgitcentreusername>
+```
+Where ```yourgitcentreusername``` is the username where you are going to upload you commits.
+
+```
+git config --global user.email <yourgitcentreemail>
+```
+Where ```yourgitcentreemail``` is the e-mail where you are registered in your preferred git centre.
+
+Also, you can set you default editor for Git in case Git prompts you to add a message for a certain option. You use this command:
+
+```
+git config --global core.editor <yourpreferrededitor>
+```
+
+Where ```yourpreferrededitor``` is where you input your editor for git.
