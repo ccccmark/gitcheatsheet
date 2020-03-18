@@ -245,7 +245,7 @@ test/
 
 ## Staged and unstaged changes
 
-If ```git status``` it's not enough, you can use the ```git diff``` command to vew the changes of the actual repository.
+If ```git status``` it's not enough, you can use the ```git diff``` command to vieew the changes of the actual repository.
 
 ```
 $ git diff
@@ -255,16 +255,6 @@ index ddd9c09..a9f83bd 100644
 +++ b/README.md
 @@ -243,4 +243,9 @@ test/
  !test.out
- ```
-
--
-+## Staged and unstaged changes
-+
-+If ```git status``` it's not enough, you can use the ```git diff``` command to vew the changes of the actual repositor
-y.
-+
-+
-+
 ```
 
 If you put ```git diff``` with no arguments, all the files that had been modified will be displayed, but if you want to see a specific modified file, you need to put ```git diff  <yourfile>``` where ```yourfile``` is the file you wish to see their differences.
