@@ -175,3 +175,16 @@ Changes to be committed:
         modified:   README.md
 
 ```
+
+The ```git status``` command also tells you when a file is new, but is not tracked:
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    new file:   README
+
+```
