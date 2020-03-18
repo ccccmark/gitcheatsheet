@@ -257,7 +257,7 @@ index ddd9c09..a9f83bd 100644
  !test.out
  ```
 
--```
+-
 +## Staged and unstaged changes
 +
 +If ```git status``` it's not enough, you can use the ```git diff``` command to vew the changes of the actual repositor
