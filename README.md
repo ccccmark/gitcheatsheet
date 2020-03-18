@@ -137,7 +137,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-But if you have something that is not commited, when you execute the command, you will get this:
+But if you have something that is not tracked, when you execute the command, you will get this:
 
 ```
 $ git status
