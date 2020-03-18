@@ -189,3 +189,18 @@ Changes to be committed:
     new file:   README
 
 ```
+
+If you want to add the new file, you can just input the command ```git add <yourfile.extension>```.
+
+```git status``` also can be shorten, if you put the option ```-s``` or ```--short``` at the end:
+
+```
+$ git status -s
+ M README.md
+```
+
+The symbols are as follows
+
+* ```?? <file.ext>```, the ```??``` symbol is when a new file has been added, but it has not tracked.
+* ```M <file.ext>```, the ```M``` symbol means that the file has been modified.
+* ```A <file.ext>```, the ```A``` symbol means that the file has been added for tracking.
