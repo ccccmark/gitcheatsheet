@@ -486,3 +486,8 @@ The most interesting option is ```format```, because you specify the format you 
 |```%ae```| Author E-mail|
 |```%ad```| Author Date |
 |```%ar```| Author Date, relative|
+|```%cn```| Committer Name |
+|```%ce```| Committer Email |
+|```%cd```| Commiter Date |
+|```%cr```| Commiter Date, relative |
+|```%s```| Subject |
