@@ -214,4 +214,20 @@ If you want to add the new file, you can just input the command ```git add <your
 ## Ignoring files
 
 To ignore files in Git, add a new ```.gitignore``` file in your repository, then you will get a new file where you can edit so Git knows what files should be ignored.
-Test, test, test.
+
+You just need to edit the file to put the extensions that Git should ignore.
+
+Some rules that must be applied in the ```.gitignore``` file are:
+
+* The blank lines or lines that starts with ```#``` are ignored.
+* Put the ```*.ext``` on a line, where the ```ext``` means to an extension that you wish that Git ignore.
+* Put the ```*.[ext1ext2]```, where the both ```ext1``` and the ```ext2``` are the extensions that you wish Git to ignore
+* Put the ```*~```, where the files with ```~``` should be ignored.
+* Put ```/``` at the end a pattern to specify a directory.
+* Put ```/``` at the start of the pattern to avoid recursivity or infinite or reverse 
+
+Here is an example of a ```.gitignore``` file
+
+```
+# This will be ignored
+```
