@@ -213,4 +213,6 @@ If you want to add the new file, you can just input the command ```git add <your
 
 ## Ignoring files
 
-To ignore fi
+To ignore files in Git, add a new ```.gitignore``` file in your repository, then you will get a new file where you can edit so Git knows what files should be ignored.
+
+Test, test, test.
