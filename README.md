@@ -154,4 +154,24 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-And you will be prompted to commit the repository.
+And you will be prompted to add the modified file.
+
+To add the file or files you want to add, you only put this command
+
+```
+git add <yourfile.extension>
+```
+
+When you execute the ```git status```, you will get something like this:
+
+```
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+```
