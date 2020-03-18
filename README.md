@@ -161,7 +161,7 @@ To add the file or files you want to add, you only put this command
 ```
 git add <yourfile.extension>
 ```
-* Note: You need to add every file to Git to commit.
+- Note: You need to add every file to Git to commit.
 
 When you execute the ```git status```, you will get something like this:
 
