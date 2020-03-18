@@ -361,3 +361,38 @@ Changes to be committed:
 
     renamed:    c.c -> programming.c
 ```
+
+# Viewing the history
+
+To view the history, you can use the command ```git log```, this will show all the commits you made.
+
+```
+$ git log
+commit bc6b98b8a0fda672d80c8f6ec45f83367acf0645 (HEAD -> master, origin/master)
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:59:56 2020 -0600
+
+    New inf
+
+commit 5cf7a1dd3b801854e69582284df9f4ba845d0899
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:58:37 2020 -0600
+
+    New inf
+
+commit 7aa8fa8f5ee465c26a2ddc1716dc38b23e0ba874
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:47:17 2020 -0600
+
+    New info
+
+commit 89c0b6399fd74a7bc6dc0bee30abbf16e28c6843
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:33:16 2020 -0600
+
+    New info
+
+commit e16846f0397b7ee1652c8861d6060b4920090b45
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:22:49 2020 -0600
+```
