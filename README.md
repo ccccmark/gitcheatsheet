@@ -243,4 +243,37 @@ test/
 !test.out
 ```
 
+## Staged and unstaged changes
+
+If ```git status``` it's not enough, you can use the ```git diff``` command to vew the changes of the actual repository.
+
 ```
+$ git diff
+diff --git a/README.md b/README.md
+index ddd9c09..a9f83bd 100644
+--- a/README.md
++++ b/README.md
+@@ -243,4 +243,9 @@ test/
+ !test.out
+ ```
+
+-```
++## Staged and unstaged changes
++
++If ```git status``` it's not enough, you can use the ```git diff``` command to vew the changes of the actual repositor
+y.
++
++
++
+```
+
+If you put ```git diff``` with no arguments, all the files that had been modified will be displayed, but if you want to see a specific modified file, you need to put ```git diff  <yourfile>``` where ```yourfile``` is the file you wish to see their differences.
+
+To go across the file, press the Enter key to go more beyond the file, and if you want to quit at anytime, you press the Q key.
+
+
+To see what will be added in the next commit, put the ```--staged``` or the ```--cached``` option aside the ```git diff``` command.
+
+
+# Commiting changes
+
