@@ -308,3 +308,37 @@ $ git commit -a -m 'New file .c'
 [master 83e38c7] New file.c
  1 file changed, 1 file added, 12 insertions(+), 0 deletions(-)
 ```
+
+## Removing a file
+
+To remove a file, you only need to stop Git from tracking that file, if you want to do so, ```git rm``` can do that.
+
+If you delete only the file, Git won't be aware of that deletion.
+
+```
+rm c.c
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    c.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Then, if you run ```git rm <yourdeletedfile>``` where ```yourdeletedfile``` is the file that you deleted.
+
+```
+$ git rm c.c
+rm c.c
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    deleted:    c.c
+```
