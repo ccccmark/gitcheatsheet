@@ -342,3 +342,22 @@ Changes to be committed:
 
     deleted:    c.c
 ```
+If you wish Git to not to track a file anymore, but you want to keep it in your local repository, you put ```git rm --cached <yourfile>, where ```yourfile``` is the file you wish Git to stop tracking.
+
+
+## Moving files
+
+Although in most common cases, the command ```mv``` is for moving, in Git, ```git mv``` is for renaming and moving.
+
+You put the command as ```git mv <infile> <outfile>```, where ```infile``` and ```outfile``` are the names you wish to rename.
+
+```
+$ git mv c.c programming.c
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    renamed:    c.c -> programming.c
+```
