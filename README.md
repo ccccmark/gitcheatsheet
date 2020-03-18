@@ -245,7 +245,7 @@ test/
 
 ## Staged and unstaged changes
 
-If ```git status``` it's not enough, you can use the ```git diff``` command to vieew the changes of the actual repository.
+If ```git status``` it's not enough, you can use the ```git diff``` command to view the changes of the actual repository.
 
 ```
 $ git diff
@@ -267,3 +267,16 @@ To see what will be added in the next commit, put the ```--staged``` or the ```-
 
 # Commiting changes
 
+To commit changes, you need to use the command ```git commit```, doing this, Git will open your editor to enter a message:
+
+```
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   README
+#	new file:   c.c
+#
+```
