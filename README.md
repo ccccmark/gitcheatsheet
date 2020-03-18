@@ -87,3 +87,45 @@ In this way, you will add the files you want to commit.
 git commit -m "<yourcommitmessage>"
 ```
 In this way, you will commit the changes you made with a message, if you only use ```git commit```, you will be prompted to add a message on your preferred editor.
+
+## Cloning a repository
+
+If you wish to start a repository, but you don't want to start from scratch, you can clone a previous repository, you will only need to use the command:
+
+```
+git clone
+```
+To get a repository, you just need to enter this command:
+
+```
+git clone <url>
+```
+
+Where ```url``` is the link of the repository you want to clone, but if you wish to clone the repository to a specific folder, you will only add the directory at the end of the url.
+
+```
+git clone <url> yourdirectory
+```
+
+# Saving changes to a repository
+
+Saving changes to the repository will be confusing, but if you know how to do it, it will be easy for you.
+
+The files can be tracked or untracked, depending of the files you are editing.
+
+Tracked files are the files that were on a previous snapshot, can be modified or not, or staged.
+
+Untracked files are files that are normally files, nothing else, they are like a regular file, and they are not staged or saved on the snapshot.
+
+
+If you clone a repository, all files will be tracked because they aren't modified.
+
+Modifying a file will notify Git when the file has been in that state, and you need to tell Git to track it again.
+
+If you want to know about what is the status of the files, you just put the command:
+```
+git status
+```
+In this way, you will have the status of your repository, like this:
+
+
