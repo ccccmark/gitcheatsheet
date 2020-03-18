@@ -265,7 +265,7 @@ To go across the file, press the Enter key to go more beyond the file, and if yo
 To see what will be added in the next commit, put the ```--staged``` or the ```--cached``` option aside the ```git diff``` command.
 
 
-# Commiting changes
+## Commiting changes
 
 To commit changes, you need to use the command ```git commit```, doing this, Git will open your editor to enter a message:
 
@@ -281,4 +281,30 @@ To commit changes, you need to use the command ```git commit```, doing this, Git
 #
 ```
 
-Alternatively, you can put a message to your commit aside of the ```git commit``` command by using ```-m``` option, then the message you want for your commit with quotes.
+Alternatively, you can put a message to your commit aside of the ```git commit``` command by using ```-m``` option, then the message you want for your commit with quotes like this:
+
+
+```git commit -m "Your Message Here"```
+
+## Skipping the Staging Area
+
+To skip the Staging Area, you will need to use ```-a``` option aside the ```git commit``` command, this will, not only add the files, it will also add all the already tracked files.
+
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   README.md
+    new file:   c.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git commit -a -m 'New file .c'
+[master 83e38c7] New file.c
+ 1 file changed, 1 file added, 12 insertions(+), 0 deletions(-)
+```
