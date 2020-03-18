@@ -2,7 +2,7 @@
 
 This is the summary of the Git usage, but first, what is Git?
 
-Git is the version control for programs, and also for the sake of controlling the versions ans so on.
+Git is the version control for programs, and also for the sake of controlling the versions and so on.
 
 Below Git we can find centres for the version control, such as GitHub (which is the page where your are reading this Markdown), GitLab, etc.
 
