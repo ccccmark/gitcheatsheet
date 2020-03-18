@@ -470,6 +470,19 @@ b96cb864af2b6cceb48bf1eeba24e3a15b80022a Corrections ans to and
 2c829dfa2ce460fde019a2e0a22197eb515aabbe New info
 ```
 
-Scroll down = Enter, Q = Quit
+*Scroll down = Enter, Q = Quit
 
+The most interesting option is ```format```, because you specify the format you want to use:
 
+| Option | Description |
+|----------|-----------------|
+|```%H```| Commit Hash |
+|```%h```| Commit Hash (Abbreviated) |
+|```%T```| Tree Hash |
+|```%t```| Tree Hash (Abbreviated) |
+|```%P```| Parent Hashes |
+|```%p```| Parent Hashes (Abbreviated) |
+|```%an```| Author Name |
+|```%ae```| Author E-mail|
+|```%ad```| Author Date |
+|```%ar```| Author Date, relative|
