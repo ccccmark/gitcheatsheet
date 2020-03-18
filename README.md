@@ -396,3 +396,40 @@ commit e16846f0397b7ee1652c8861d6060b4920090b45
 Author: myname <myemail@domain.com>
 Date:   Wed Mar 18 14:22:49 2020 -0600
 ```
+
+If you wish to scroll down through all the commits, press the Enter key, to quit, press the Q key.
+
+Using ```git log -p``` will show you the commits And the changes you have made in your Git, putting a number ```-n``` will show you just an specific entry or entries. It's similar to ```git diff``` but with more information.
+
+
+Using ```git --stat``` shows you the changes that you have made, insertions and deletions.
+
+```
+$ git log --stat
+commit ee9fad6984ab4e7024a941e267149605b5db13b7 (HEAD -> master, origin/master)
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 15:09:45 2020 -0600
+
+    Log info
+
+ README.md | 35 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 35 insertions(+)
+
+commit bc6b98b8a0fda672d80c8f6ec45f83367acf0645
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:59:56 2020 -0600
+
+    New inf
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5cf7a1dd3b801854e69582284df9f4ba845d0899
+Author: myname <myemail@domain.com>
+Date:   Wed Mar 18 14:58:37 2020 -0600
+
+    New inf
+
+ README.md | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+```
