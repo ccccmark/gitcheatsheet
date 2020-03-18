@@ -128,4 +128,30 @@ git status
 ```
 In this way, you will have the status of your repository, like this:
 
+```
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 
+nothing to commit, working tree clean
+```
+
+But if you have something that is not commited, when you execute the command, you will get this:
+
+```
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+And you will be prompted to commit the repository.
