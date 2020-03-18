@@ -122,6 +122,8 @@ If you clone a repository, all files will be tracked because they aren't modifie
 
 Modifying a file will notify Git when the file has been in that state, and you need to tell Git to track it again.
 
+## Getting the status of the repository
+
 If you want to know about what is the status of the files, you just put the command:
 ```
 git status
@@ -156,6 +158,36 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 And you will be prompted to add the modified file.
 
+
+The ```git status``` command also tells you when a file is new, but is not tracked:
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    new file:   README
+
+```
+
+```git status``` also can be shorten, if you put the option ```-s``` or ```--short``` at the end:
+
+```
+$ git status -s
+ M README.md
+```
+
+The symbols are as follows:
+
+* ```?? <file.ext>```, the ```??``` symbol is when a new file has been added, but it has not tracked.
+* ```M <file.ext>```, the ```M``` symbol means that the file has been modified.
+* ```A <file.ext>```, the ```A``` symbol means that the file has been added for tracking.
+
+
+## Adding a file
+
 To add the file or files you want to add, you only put this command
 
 ```
@@ -177,30 +209,8 @@ Changes to be committed:
 
 ```
 
-The ```git status``` command also tells you when a file is new, but is not tracked:
-
-```
-$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-    new file:   README
-
-```
-
 If you want to add the new file, you can just input the command ```git add <yourfile.extension>```.
 
-```git status``` also can be shorten, if you put the option ```-s``` or ```--short``` at the end:
+## Ignoring files
 
-```
-$ git status -s
- M README.md
-```
-
-The symbols are as follows
-
-* ```?? <file.ext>```, the ```??``` symbol is when a new file has been added, but it has not tracked.
-* ```M <file.ext>```, the ```M``` symbol means that the file has been modified.
-* ```A <file.ext>```, the ```A``` symbol means that the file has been added for tracking.
+To ignore fi
