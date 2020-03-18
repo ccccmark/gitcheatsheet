@@ -25,14 +25,8 @@ git config --global user.name <yourgitcentreusername> // specifies the location 
 //yourgitcentreusername is the username where you are going to upload you commits.
 git config --global user.email <yourgitcentreemail>
 // yourgitcentreemail``` is the e-mail where you are registered in your preferred git centre.
-
-Also, you can set you default editor for Git in case Git prompts you to add a message for a certain option. You use this command:
-
-```
-git config --global core.editor <yourpreferrededitor>
-```
-
-Where ```yourpreferrededitor``` is where you input your editor for git.
+// Also, you can set you default editor for Git in case Git prompts you to add a message for a certain option.
+git config --global core.editor <yourpreferrededitor> // This is the command, where ```yourpreferrededitor``` is where you input your editor for git.
 
 # Getting a repository
 
@@ -40,46 +34,20 @@ There are two ways for getting a repository:
 
 ## Initializing a repository
 
-Once you have created a subdirectory for your repository, you can start your repository using:
+git init // This will create a new subdirectory called ```.git```, which contains the necessary files for the repository.
 
-```
-git init
-```
-
-This will create a new subdirectory called ```.git```, which contains the necessary files for the repository.
-
-If you wish to create a new commit, you need to do the following:
-
-```
 git add <yourfile.extension>
 git add LICENSE
 git add README.md
-```
-In this way, you will add the files you want to commit.
-
-```
-git commit -m "<yourcommitmessage>"
-```
-In this way, you will commit the changes you made with a message, if you only use ```git commit```, you will be prompted to add a message on your preferred editor.
+// You need to add this to your file before commiting.
+git commit // Start to commit, but you need to leave a message
+git commit -m "<yourcommitmessage>" // Skips the leaving the message option
 
 ## Cloning a repository
 
-If you wish to start a repository, but you don't want to start from scratch, you can clone a previous repository, you will only need to use the command:
-
-```
-git clone
-```
-To get a repository, you just need to enter this command:
-
-```
-git clone <url>
-```
-
-Where ```url``` is the link of the repository you want to clone, but if you wish to clone the repository to a specific folder, you will only add the directory at the end of the url.
-
-```
-git clone <url> yourdirectory
-```
+git clone // Clones the repository
+git clone <url> // Clones from a url, where ```url``` is the link of the repository you want to clone
+git clone <url> yourdirectory // Clones from a url, in a specific directory
 
 # Saving changes to a repository
 
