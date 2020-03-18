@@ -402,7 +402,7 @@ If you wish to scroll down through all the commits, press the Enter key, to quit
 Using ```git log -p``` will show you the commits And the changes you have made in your Git, putting a number ```-n``` will show you just an specific entry or entries. It's similar to ```git diff``` but with more information.
 
 
-Using ```git --stat``` shows you the changes that you have made, insertions and deletions.
+Using ```git log --stat``` shows you the changes that you have made, insertions and deletions.
 
 ```
 $ git log --stat
@@ -433,3 +433,43 @@ Date:   Wed Mar 18 14:58:37 2020 -0600
  README.md | 19 +++++++++++++++++++
  1 file changed, 19 insertions(+)
 ```
+
+Again, if you wish to scroll down, press the Enter key, Q key will quit the command.
+
+Using ```git log --pretty``` will change the format that the commits will be shown, for instance, the ```git log --pretty=oneline``` will show the commits in one single line:
+
+```
+$ git log --pretty=oneline
+7623ece1cfeee3471abc3b3992868668ab1a2bba (HEAD -> master, origin/master) History info
+ee9fad6984ab4e7024a941e267149605b5db13b7 Log info
+bc6b98b8a0fda672d80c8f6ec45f83367acf0645 New inf
+5cf7a1dd3b801854e69582284df9f4ba845d0899 New inf
+7aa8fa8f5ee465c26a2ddc1716dc38b23e0ba874 New info
+89c0b6399fd74a7bc6dc0bee30abbf16e28c6843 New info
+e16846f0397b7ee1652c8861d6060b4920090b45 Test
+b315494b9df8dfd543f468668ba2ed5e128bd600 Test
+8b4d6ed057bb64020dc6331c67fabacc787e85cb deleted
+d14a140b39df4eeeaac081c0b85ee7a58ff3df65 deleted
+c5e77976520ad764c271c75928ded8637ca78fea More info
+97f82029fe35d8d15a44070cc2cfaa50f5431777 More info
+e05cec2036e360dba68b6bb5e66343902010bff3 More info
+d4877b7c74ecc4df29d2d229f887e55b465c2fb4 Examples
+b9720dab8ca142f115c6ea724af5126fc371bb3f Re-structured
+4aa50fe52901c6b91c2aa217945ec3cf381eca2f Re-structured
+eeffe0f8a0f196df0fe8b641dd6a244214e8cf06 Re-structured
+9de280fec1fb4ce2dd6a34ac3c3f93c35bb71a6c Re-structured
+46175aa23c5e6a4b4221bb9c971544870617c9da Status info added
+02840b084742c501a6a538d3eb4e7957e86d0f7d git status info
+bb5c438e3a46761b2d4dcaab1b5dd97a61841e15 git status info
+d97e59b447861db9fb331212413375b45ce6b624 git status info
+802ebac8d37e68a3ed265e4bb0160fb597512c10 More info
+e46c012c38716f7453bf6471defc5243a8de7f11 More info
+4164908e05282a94ea213e6dc3a17eb5a7236760 More info
+380211dcee2af82b8a18478009a4537b660a7851 More info
+b96cb864af2b6cceb48bf1eeba24e3a15b80022a Corrections ans to and
+2c829dfa2ce460fde019a2e0a22197eb515aabbe New info
+```
+
+Scroll down = Enter, Q = Quit
+
+
