@@ -276,7 +276,9 @@ To commit changes, you need to use the command ```git commit```, doing this, Git
 # Your branch is up-to-date with 'origin/master'.
 #
 # Changes to be committed:
-#	modified:   README
+#	modified:   README.md
 #	new file:   c.c
 #
 ```
+
+Alternatively, you can put a message to your commit aside of the ```git commit``` command by using ```-m``` option, then the message you want for your commit with quotes.
