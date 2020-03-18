@@ -472,7 +472,7 @@ b96cb864af2b6cceb48bf1eeba24e3a15b80022a Corrections ans to and
 
 *Scroll down = Enter, Q = Quit
 
-The most interesting option is ```format```, because you specify the format you want to use:
+The most interesting option is ```format```, because you specify the format you want to use, you can follow this table for format:
 
 | Option | Description |
 |----------|-----------------|
@@ -491,3 +491,13 @@ The most interesting option is ```format```, because you specify the format you 
 |```%cd```| Commiter Date |
 |```%cr```| Commiter Date, relative |
 |```%s```| Subject |
+
+Author and Committer are similar, although Author is the person who made the work and Committer is the person who last applied the work.
+
+Also, ```--graph``` is a useful option for getting an ASCII graph to view your commits and branches.
+
+By now, only this options are important for ```git log```, but you can find many other options on other sources.
+
+## Limiting Log Output
+
+
