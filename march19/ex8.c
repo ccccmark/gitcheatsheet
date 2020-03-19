@@ -34,7 +34,7 @@ int main (int argc, char *argv[]){
 // Prints the division of sizeof (full_name) and sizeof(char)
 	
 	printf("name=\"%s\" and full_name=\"%s\"\n", name, full_name);
-// The of final declaration to print name and full_name
+// The printing of final declaration to print name and full_name
 
 	return 0;
 }
