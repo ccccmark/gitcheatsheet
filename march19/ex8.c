@@ -24,7 +24,7 @@ int main (int argc, char *argv[]){
 	printf("The size of a char: %ld\n", sizeof(char));
 // Gives the size of the declared chars, which will be 4
 	printf("The size of name (char[]): %ld\n", sizeof(name));
-// Gives the size of the name delcaration
+// Gives the size of the name declaration
 	printf("The number of chars: %ld\n", sizeof(name) / sizeof(char));
 // Prints the number in the division of sizeof(name) and sizeof(char)
 	
